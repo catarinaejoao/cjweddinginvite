@@ -24,7 +24,7 @@ This repository is prepared for GitHub Pages with `.github/workflows/pages.yml`.
 Expected production URL:
 
 ```text
-https://joaorodriguesgithub.github.io/cjweddinginvite/
+https://catarinaejoao.github.io/cjweddinginvite/
 ```
 
 ## Pre-Launch Checklist
