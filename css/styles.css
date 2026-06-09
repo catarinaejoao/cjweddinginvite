@@ -8,7 +8,55 @@
   font-family: "Playfair Display", serif;
 }
 
-/* Transition States */
+.section-icon {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.section-icon--small {
+  width: 5rem;
+  height: 5rem;
+}
+
+.action-button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0.75rem 1rem 0.75rem 0.5rem;
+  cursor: pointer;
+  border: 1px solid #e5e0d8;
+  border-radius: 9999px;
+  background-color: #fdfaf6;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-button:hover {
+  border-color: #d4cbb8;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+}
+
+.action-button__icon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(229 224 216 / 0.5);
+  border-radius: 9999px;
+  background-color: rgb(244 235 217 / 0.5);
+}
+
+.action-button__copy {
+  flex-grow: 1;
+  padding-right: 2.5rem;
+  text-align: center;
+}
+
+/* Transition states */
 .fade-out {
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
@@ -19,7 +67,7 @@
   transition: opacity 0.8s ease-in-out;
 }
 
-/* Scrollbar Hiding (Maintains Functionality) */
+/* Scrollbar hiding maintains scroll behavior. */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
