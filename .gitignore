@@ -1,0 +1,14 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large media files (Optional: Uncomment if you want to host videos elsewhere and not track them in git)
+# assets/videos/*.mp4
+
+# IDE files
+.vscode/

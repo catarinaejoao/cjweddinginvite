@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Casamento João & Catarina</title>
+    <meta name="description" content="Convite de casamento de João e Catarina, 20 Setembro 2026.">
+    <meta name="theme-color" content="#fcfbf9">
+    <meta property="og:title" content="Casamento João & Catarina">
+    <meta property="og:description" content="Convite de casamento de João e Catarina, 20 Setembro 2026.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@300;400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@300;400&family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-200 text-slate-800 font-sans antialiased m-0 p-0 flex justify-center h-screen overflow-hidden">
+
+    <div class="w-full max-w-md relative h-full bg-[#fcfbf9] shadow-2xl overflow-hidden flex flex-col">
+
+        <div id="intro-screen" class="absolute inset-0 z-50 bg-[#f9f8f6] overflow-hidden">
+            <video id="intro-video" class="absolute inset-0 w-full h-full object-cover scale-[1.35] origin-center" playsinline preload="metadata">
+                <source src="./assets/videos/opening-envelope-video-9by16-trimmed.mp4" type="video/mp4">
+            </video>
+            <div id="tap-to-open-trigger" class="absolute inset-0 z-10 cursor-pointer"></div>
+        </div>
+
+        <main id="main-content" class="w-full h-full opacity-0 hidden overflow-y-scroll snap-y snap-mandatory no-scrollbar relative z-0">
+            
+            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 shrink-0">
+                <video autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover z-[-1]">
+                    <source src="./assets/videos/kissing-couple-theme-moq.mp4" type="video/mp4">
+                </video>
+                
+                <div class="w-full mix-blend-multiply flex flex-col items-center justify-center mt-[-5vh]">
+                    <h2 class="font-cinzel font-light italic text-2xl text-[#1a1a1a] tracking-widest uppercase mb-4">
+                        Casamento
+                    </h2>
+
+                    <h1 class="font-cinzel font-light italic text-[#1a1a1a] leading-[1.35] w-full">
+                        <span class="block text-[29px] mb-2">João</span>
+                        <span class="block text-[17px] mb-2">&</span>
+                        <span class="block text-[29px]">Catarina</span>
+                    </h1>
+
+                    <div class="flex items-center justify-center gap-4 w-full max-w-[120px] mx-auto my-6">
+                        <div class="h-[1px] bg-[#1a1a1a] flex-grow opacity-60"></div>
+                        <div class="w-1.5 h-1.5 bg-[#1a1a1a] rotate-45 opacity-60"></div>
+                        <div class="h-[1px] bg-[#1a1a1a] flex-grow opacity-60"></div>
+                    </div>
+
+                    <p class="font-cinzel font-light italic text-[22px] text-[#1a1a1a]">
+                        20 Setembro 2026
+                    </p>
+                </div>
+            </section>
+
+            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center p-6 bg-[#fcfbf9] shrink-0">
+    
+                <div class="mb-4 text-[#d4cbb8]">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                </div>
+                <h2 class="font-playfair font-normal italic text-[30px] mb-6 text-[#1a1a1a]">Localização</h2>
+                
+                <div class="w-full max-w-sm bg-white border border-[#e5e0d8] rounded-2xl overflow-hidden shadow-sm flex flex-col max-h-[75vh]">
+                    <div class="w-full h-40 bg-[#f4f1eb] flex items-center justify-center border-b border-[#e5e0d8] shrink-0">
+                        <span class="font-cinzel text-slate-400 text-xs tracking-widest uppercase">[Imagem da Quinta]</span>
+                    </div>
+            
+                    <div class="p-6 text-center flex-grow overflow-y-auto no-scrollbar">
+                        <div class="w-12 h-12 rounded-full border border-[#e5e0d8] bg-[#fcfbf9] flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-5 h-5 text-[#a39a8c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
+                        </div>
+            
+                        <h3 class="font-playfair font-medium text-[20px] text-[#1a1a1a] mb-3 leading-tight">
+                            Pousada Mosteiro Guimarães
+                        </h3>
+                        
+                        <div class="font-cinzel text-[14px] text-slate-600 uppercase leading-relaxed mb-8">
+                            <p>Largo Domingos Leite de Castro</p>
+                            <p>Lugar da Costa</p>
+                            <p>4810-011 Guimarães, Portugal</p>
+                        </div>
+            
+                        <div class="flex flex-col gap-3 w-full">
+                
+                            <a href="https://www.google.com/maps/search/?api=1&query=Pousada%20Mosteiro%20Guimar%C3%A3es%2C%20Largo%20Domingos%20Leite%20de%20Castro%2C%204810-011%20Guimar%C3%A3es%2C%20Portugal" target="_blank" rel="noopener noreferrer" class="group relative w-full flex items-center py-3 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] transition-all cursor-pointer">
+                                <div class="w-10 h-10 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
+                                    <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                                </div>
+                                
+                                <div class="flex-grow text-center pr-10">
+                                    <span class="block font-cinzel font-medium text-[13px] text-[#1a1a1a] uppercase">Obter Direções</span>
+                                    <span class="block font-cinzel font-normal text-[10px] text-[#5c5c5c] tracking-widest uppercase mt-0.5">Abrir no Google Maps</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://waze.com/ul?q=Pousada%20Mosteiro%20Guimar%C3%A3es%2C%20Largo%20Domingos%20Leite%20de%20Castro%2C%204810-011%20Guimar%C3%A3es%2C%20Portugal&navigate=yes" target="_blank" rel="noopener noreferrer" class="group relative w-full flex items-center py-3 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] transition-all cursor-pointer">
+                                <div class="w-10 h-10 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
+                                    <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+                                </div>
+                                
+                                <div class="flex-grow text-center pr-10">
+                                    <span class="block font-cinzel font-medium text-[13px] text-[#1a1a1a] uppercase">Obter Direções</span>
+                                    <span class="block font-cinzel font-normal text-[10px] text-[#5c5c5c] tracking-widest uppercase mt-0.5">Abrir no Waze</span>
+                                </div>
+                            </a>
+            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
+                <div class="mb-4 text-[#d4cbb8]">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </div>
+                
+                <h2 class="font-playfair font-normal italic text-[30px] mb-8 text-[#1a1a1a]">Como tudo começou</h2>
+                
+                <div class="font-cinzel text-[14px] text-[#1a1a1a] leading-[2] uppercase space-y-6 px-4 overflow-y-auto max-h-[50vh] no-scrollbar">
+                    <p>Conhecemo-nos por acaso.</p>
+                    <p>Ficámos por escolha.</p>
+                    <p>E, sem darmos por isso, encontrámos um no outro aquilo que todos procuramos: alguém que faz qualquer lugar parecer casa.</p>
+                </div>
+            </section>
+            
+            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
+                <div class="mb-4 text-[#d4cbb8]">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                
+                <h2 class="font-playfair font-normal italic text-[30px] mb-2 text-[#1a1a1a]">Planeamento</h2>
+                <p class="font-cinzel text-[11px] uppercase tracking-widest text-slate-500 mb-8">O que nós planeámos para ti</p>
+                
+                <div class="relative w-full max-w-[360px] h-[608px] overflow-y-auto no-scrollbar">
+                    
+                    <svg class="absolute left-1/2 -translate-x-1/2 top-0 pointer-events-none z-0" width="200" viewBox="0 0 200 608" fill="none" preserveAspectRatio="none" style="height: 608px;" aria-hidden="true">
+                        <path d="M 80 48 C 80 112, 120 112, 120 176 C 120 240, 80 240, 80 304 C 80 368, 120 368, 120 432 C 120 496, 80 496, 80 560" stroke="#3d4f28" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path>
+                        <g opacity="1"><g transform="translate(80, 48) scale(1, 1)"><path d="M 0 0 C 5 -2, 18 -4, 36 -2" stroke="#3d4f28" stroke-width="1.4" fill="none" stroke-linecap="round"></path><path d="M 6 -0.5 C 10 -6, 14 -14, 10 -18 C 8 -12, 7 -6, 8 -1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 6 0.5 C 10 6, 14 14, 10 18 C 8 12, 7 6, 8 1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 -1 C 19 -8, 23 -16, 19 -20 C 17 -14, 16 -7, 17 -2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 1 C 19 8, 23 16, 19 20 C 17 14, 16 7, 17 2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 24 -1.5 C 27 -7, 30 -13, 27 -16 C 25 -11, 25 -5, 26 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 24 1.5 C 27 7, 30 13, 27 16 C 25 11, 25 5, 26 2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 37 -6, 40 -10, 38 -14 C 36 -9, 35 -4, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 38 0, 42 4, 40 8 C 37 4, 35 1, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path></g></g>
+                        <g opacity="1"><g transform="translate(120, 176) scale(-1, 1)"><path d="M 0 0 C 5 -2, 18 -4, 36 -2" stroke="#3d4f28" stroke-width="1.4" fill="none" stroke-linecap="round"></path><path d="M 6 -0.5 C 10 -6, 14 -14, 10 -18 C 8 -12, 7 -6, 8 -1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 6 0.5 C 10 6, 14 14, 10 18 C 8 12, 7 6, 8 1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 -1 C 19 -8, 23 -16, 19 -20 C 17 -14, 16 -7, 17 -2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 1 C 19 8, 23 16, 19 20 C 17 14, 16 7, 17 2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 24 -1.5 C 27 -7, 30 -13, 27 -16 C 25 -11, 25 -5, 26 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 24 1.5 C 27 7, 30 13, 27 16 C 25 11, 25 5, 26 2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 37 -6, 40 -10, 38 -14 C 36 -9, 35 -4, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 38 0, 42 4, 40 8 C 37 4, 35 1, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path></g></g>
+                        <g opacity="1"><g transform="translate(80, 304) scale(1, 1)"><path d="M 0 0 C 5 -2, 18 -4, 36 -2" stroke="#3d4f28" stroke-width="1.4" fill="none" stroke-linecap="round"></path><path d="M 6 -0.5 C 10 -6, 14 -14, 10 -18 C 8 -12, 7 -6, 8 -1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 6 0.5 C 10 6, 14 14, 10 18 C 8 12, 7 6, 8 1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 -1 C 19 -8, 23 -16, 19 -20 C 17 -14, 16 -7, 17 -2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 1 C 19 8, 23 16, 19 20 C 17 14, 16 7, 17 2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 24 -1.5 C 27 -7, 30 -13, 27 -16 C 25 -11, 25 -5, 26 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 24 1.5 C 27 7, 30 13, 27 16 C 25 11, 25 5, 26 2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 37 -6, 40 -10, 38 -14 C 36 -9, 35 -4, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 38 0, 42 4, 40 8 C 37 4, 35 1, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path></g></g>
+                        <g opacity="1"><g transform="translate(120, 432) scale(-1, 1)"><path d="M 0 0 C 5 -2, 18 -4, 36 -2" stroke="#3d4f28" stroke-width="1.4" fill="none" stroke-linecap="round"></path><path d="M 6 -0.5 C 10 -6, 14 -14, 10 -18 C 8 -12, 7 -6, 8 -1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 6 0.5 C 10 6, 14 14, 10 18 C 8 12, 7 6, 8 1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 -1 C 19 -8, 23 -16, 19 -20 C 17 -14, 16 -7, 17 -2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 1 C 19 8, 23 16, 19 20 C 17 14, 16 7, 17 2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 24 -1.5 C 27 -7, 30 -13, 27 -16 C 25 -11, 25 -5, 26 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 24 1.5 C 27 7, 30 13, 27 16 C 25 11, 25 5, 26 2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 37 -6, 40 -10, 38 -14 C 36 -9, 35 -4, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 38 0, 42 4, 40 8 C 37 4, 35 1, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path></g></g>
+                        <g opacity="1"><g transform="translate(80, 560) scale(1, 1)"><path d="M 0 0 C 5 -2, 18 -4, 36 -2" stroke="#3d4f28" stroke-width="1.4" fill="none" stroke-linecap="round"></path><path d="M 6 -0.5 C 10 -6, 14 -14, 10 -18 C 8 -12, 7 -6, 8 -1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 6 0.5 C 10 6, 14 14, 10 18 C 8 12, 7 6, 8 1" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 -1 C 19 -8, 23 -16, 19 -20 C 17 -14, 16 -7, 17 -2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 15 1 C 19 8, 23 16, 19 20 C 17 14, 16 7, 17 2" stroke="#3d4f28" stroke-width="1" fill="none" stroke-linecap="round"></path><path d="M 24 -1.5 C 27 -7, 30 -13, 27 -16 C 25 -11, 25 -5, 26 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 24 1.5 C 27 7, 30 13, 27 16 C 25 11, 25 5, 26 2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 37 -6, 40 -10, 38 -14 C 36 -9, 35 -4, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path><path d="M 34 -2 C 38 0, 42 4, 40 8 C 37 4, 35 1, 36 -2" stroke="#3d4f28" stroke-width="0.9" fill="none" stroke-linecap="round"></path></g></g>
+                    </svg>
+            
+                    <div class="relative flex items-center min-h-[96px] mb-8 z-10">
+                        <div class="flex-1 text-right pr-6">
+                            <h3 class="font-cinzel font-medium text-[16px] text-[#1a1a1a] uppercase leading-tight">Receção</h3>
+                            <p class="font-playfair text-[14px] text-slate-500 mt-1">15:00</p>
+                        </div>
+                        <div class="w-20 shrink-0"></div>
+                        <div class="flex-1 text-left pl-6">
+                            <img src="./assets/images/icon-venue.png" alt="Receção icon" class="w-16 h-16 object-contain">
+                        </div>
+                    </div>
+            
+                    <div class="relative flex items-center min-h-[96px] mb-8 z-10">
+                        <div class="flex-1 text-right pr-6 flex justify-end">
+                            <img src="./assets/images/icon-wedding-rings.png" alt="Cerimónia icon" class="w-16 h-16 object-contain">
+                        </div>
+                        <div class="w-20 shrink-0"></div>
+                        <div class="flex-1 text-left pl-6">
+                            <h3 class="font-cinzel font-medium text-[16px] text-[#1a1a1a] uppercase leading-tight">Cerimónia</h3>
+                            <p class="font-playfair text-[14px] text-slate-500 mt-1">15:30</p>
+                        </div>
+                    </div>
+            
+                    <div class="relative flex items-center min-h-[96px] mb-8 z-10">
+                        <div class="flex-1 text-right pr-6">
+                            <h3 class="font-cinzel font-medium text-[16px] text-[#1a1a1a] uppercase leading-tight">Cocktail</h3>
+                            <p class="font-playfair text-[14px] text-slate-500 mt-1">16:30</p>
+                        </div>
+                        <div class="w-20 shrink-0"></div>
+                        <div class="flex-1 text-left pl-6">
+                            <img src="./assets/images/icon-cocktail.png" alt="Cocktail icon" class="w-16 h-16 object-contain">
+                        </div>
+                    </div>
+            
+                    <div class="relative flex items-center min-h-[96px] mb-8 z-10">
+                        <div class="flex-1 text-right pr-6 flex justify-end">
+                            <img src="./assets/images/icon-cocktail.png" alt="Bolo icon" class="w-16 h-16 object-contain">
+                        </div>
+                        <div class="w-20 shrink-0"></div>
+                        <div class="flex-1 text-left pl-6">
+                            <h3 class="font-cinzel font-medium text-[16px] text-[#1a1a1a] uppercase leading-tight">Corte do<br>Bolo</h3>
+                            <p class="font-playfair text-[14px] text-slate-500 mt-1">18:00</p>
+                        </div>
+                    </div>
+            
+                    <div class="relative flex items-center min-h-[96px] last:mb-0 z-10">
+                        <div class="flex-1 text-right pr-6">
+                            <h3 class="font-cinzel font-medium text-[16px] text-[#1a1a1a] uppercase leading-tight">Fim</h3>
+                            <p class="font-playfair text-[14px] text-slate-500 mt-1">19:00</p>
+                        </div>
+                        <div class="w-20 shrink-0"></div>
+                        <div class="flex-1 text-left pl-6">
+                            <img src="./assets/images/icon-cocktail.png" alt="Fim icon" class="w-16 h-16 object-contain">
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+            
+            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
+    
+                <div class="mb-4 text-[#d4cbb8]">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3v3l-2 5h10l-2-5V3" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 11l-3 10h16l-3-10" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 11h10" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 3h6" />
+                    </svg>
+                </div>
+                
+                <h2 class="font-playfair font-normal italic text-[30px] mb-8 text-[#1a1a1a]">Dress Code</h2>
+                
+                <div class="w-full max-w-xs bg-[#fdfaf6] border border-[#e5e0d8] rounded-2xl p-6 sm:p-8 flex flex-col items-center shadow-sm">
+                    <div class="w-12 h-[1px] bg-[#d4cbb8] mb-6"></div>
+                    <p class="font-playfair font-medium text-[22px] text-[#1a1a1a] mb-8">Semi-Formal</p>
+                    
+                    <div class="grid grid-cols-2 w-full mb-10 relative">
+                        
+                        <div class="absolute left-1/2 top-4 bottom-0 w-[1px] bg-[#e5e0d8] -translate-x-1/2" aria-hidden="true"></div>
+                        
+                        <div class="flex flex-col items-center px-2">
+                            <span class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4">Mulheres</span>
+                            <span class="font-cinzel text-[13px] text-[#1a1a1a] uppercase text-center leading-[1.8]">
+                                Vestido de<br>Cocktail
+                            </span>
+                        </div>
+                
+                        <div class="flex flex-col items-center px-2">
+                            <span class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4">Homens</span>
+                            <span class="font-cinzel text-[13px] text-[#1a1a1a] uppercase text-center leading-[1.6]">
+                                Blazer com Camisa
+                                <span class="block text-[14px] text-[#d4cbb8] my-1 font-playfair italic lowercase">&</span>
+                                Calças Chino
+                            </span>
+                        </div>
+                    </div>
+            
+                    <p class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4">Cores Sugeridas:</p>
+                    <div class="flex flex-wrap gap-4 mb-6 justify-center">
+                        <div class="w-8 h-8 rounded-full bg-[#4a7c59] shadow-inner border border-black/5" title="Verde Sálvia"></div>
+                        <div class="w-8 h-8 rounded-full bg-[#e6d5a7] shadow-inner border border-black/5" title="Beige"></div>
+                        <div class="w-8 h-8 rounded-full bg-[#e89db1] shadow-inner border border-black/5" title="Rosa Seco"></div>
+                        <div class="w-8 h-8 rounded-full bg-[#DCBBED] shadow-inner border border-black/5" title="Violeta"></div>
+                    </div>
+                    <div class="w-12 h-[1px] bg-[#d4cbb8]"></div>
+                </div>
+            </section>
+            
+            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
+                <div class="mb-4 text-[#d4cbb8]">
+                    <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" /></svg>
+                </div>
+                
+                <h2 class="font-playfair font-normal italic text-[30px] mb-6 text-[#1a1a1a]">Confirmação</h2>
+                
+                <p class="font-cinzel text-[14px] text-[#1a1a1a] mb-10 px-4 leading-[2] tracking-wide uppercase">
+                    Por favor, confirma a tua presença<br>até ao dia <span class="font-playfair font-medium">1 de Agosto de 2026</span>.
+                </p>
+                
+                <a href="[LINK_DO_GOOGLE_FORMS]" target="_blank" rel="noopener noreferrer" class="group relative w-full max-w-xs flex items-center py-3 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer">
+                    
+                    <div class="w-10 h-10 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
+                        <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    
+                    <div class="flex-grow text-center pr-10">
+                        <span class="block font-cinzel font-medium text-[13px] text-[#1a1a1a] uppercase">Confirmar Presença</span>
+                        <span class="block font-cinzel font-normal text-[10px] text-[#5c5c5c] tracking-widest uppercase mt-0.5">Abrir Google Forms</span>
+                    </div>
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
