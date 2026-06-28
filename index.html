@@ -1,309 +1,707 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Casamento João & Catarina</title>
-    <meta name="description" content="Convite de casamento de João e Catarina, 20 Setembro 2026.">
-    <meta name="theme-color" content="#fcfbf9">
-    <meta property="og:title" content="Casamento João & Catarina">
-    <meta property="og:description" content="Convite de casamento de João e Catarina, 20 Setembro 2026.">
-    <meta property="og:type" content="website">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@300;400&family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500&display=swap" rel="stylesheet">
-    
+    <meta
+      name="description"
+      content="Convite de casamento de João e Catarina, 20 Setembro 2026."
+    />
+    <meta name="theme-color" content="#fcfbf9" />
+    <meta property="og:title" content="Casamento João & Catarina" />
+    <meta
+      property="og:description"
+      content="Convite de casamento de João e Catarina, 20 Setembro 2026."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@300;400&family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body class="bg-slate-200 text-slate-800 font-sans antialiased m-0 p-0 flex justify-center h-screen overflow-hidden">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body
+    class="bg-slate-200 text-slate-800 font-sans antialiased m-0 p-0 flex justify-center h-screen overflow-hidden"
+  >
+    <div
+      class="w-full max-w-md relative h-full bg-[#fcfbf9] shadow-2xl overflow-hidden flex flex-col"
+    >
+      <div
+        id="intro-screen"
+        class="absolute inset-0 z-50 bg-[#f9f8f6] overflow-hidden"
+      >
+        <video
+          id="intro-video"
+          class="absolute inset-0 w-full h-full object-cover scale-[1.35] origin-center bg-[#f9f8f6]"
+          playsinline
+          webkit-playsinline
+          muted
+          poster="./assets/images/envelope-poster.webp"
+          preload="metadata"
+        >
+          <source
+            src="./assets/videos/opening-envelope-video-9by16-trimmed.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div
+          id="tap-to-open-trigger"
+          class="absolute inset-0 z-10 cursor-pointer"
+        ></div>
+      </div>
 
-    <div class="w-full max-w-md relative h-full bg-[#fcfbf9] shadow-2xl overflow-hidden flex flex-col">
+      <main
+        id="main-content"
+        class="w-full h-full opacity-0 hidden overflow-y-scroll snap-y snap-mandatory no-scrollbar relative z-0"
+      >
+        <section
+          class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 shrink-0"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="none"
+            class="absolute inset-0 w-full h-full object-cover z-[-1]"
+          >
+            <source
+              src="./assets/videos/kissing-couple-theme-moq.mp4"
+              type="video/mp4"
+            />
+          </video>
 
-        <div id="intro-screen" class="absolute inset-0 z-50 bg-[#f9f8f6] overflow-hidden">
-            <video 
-                id="intro-video" 
-                class="absolute inset-0 w-full h-full object-cover scale-[1.35] origin-center bg-[#f9f8f6]" 
-                playsinline 
-                webkit-playsinline 
-                muted 
-                poster="./assets/images/envelope-poster.webp" 
-                preload="metadata">
-                <source src="./assets/videos/opening-envelope-video-9by16-trimmed.mp4" type="video/mp4">
-            </video>
-            <div id="tap-to-open-trigger" class="absolute inset-0 z-10 cursor-pointer"></div>
-        </div>
+          <div
+            class="w-full mix-blend-multiply flex flex-col items-center justify-center mt-[-5vh]"
+          >
+            <h2
+              class="font-cinzel font-light italic text-2xl text-[#1a1a1a] tracking-widest uppercase mb-4"
+            >
+              Casamento
+            </h2>
 
-        <main id="main-content" class="w-full h-full opacity-0 hidden overflow-y-scroll snap-y snap-mandatory no-scrollbar relative z-0">
-            
-            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 shrink-0">
-                <video autoplay loop muted playsinline preload="none" class="absolute inset-0 w-full h-full object-cover z-[-1]">
-                    <source src="./assets/videos/kissing-couple-theme-moq.mp4" type="video/mp4">
-                </video>
-                
-                <div class="w-full mix-blend-multiply flex flex-col items-center justify-center mt-[-5vh]">
-                    <h2 class="font-cinzel font-light italic text-2xl text-[#1a1a1a] tracking-widest uppercase mb-4">
-                        Casamento
-                    </h2>
+            <h1
+              class="font-cinzel font-light italic text-[#1a1a1a] leading-[1.35] w-full"
+            >
+              <span class="block text-[29px] mb-2">Catarina</span>
+              <span class="block text-[17px] mb-2">&</span>
+              <span class="block text-[29px]">João</span>
+            </h1>
 
-                    <h1 class="font-cinzel font-light italic text-[#1a1a1a] leading-[1.35] w-full">
-                        <span class="block text-[29px] mb-2">Catarina</span>
-                        <span class="block text-[17px] mb-2">&</span>
-                        <span class="block text-[29px]">João</span>
-                    </h1>
+            <div
+              class="flex items-center justify-center gap-4 w-full max-w-[120px] mx-auto my-6"
+            >
+              <div class="h-[1px] bg-[#1a1a1a] flex-grow opacity-60"></div>
+              <div class="w-1.5 h-1.5 bg-[#1a1a1a] rotate-45 opacity-60"></div>
+              <div class="h-[1px] bg-[#1a1a1a] flex-grow opacity-60"></div>
+            </div>
 
-                    <div class="flex items-center justify-center gap-4 w-full max-w-[120px] mx-auto my-6">
-                        <div class="h-[1px] bg-[#1a1a1a] flex-grow opacity-60"></div>
-                        <div class="w-1.5 h-1.5 bg-[#1a1a1a] rotate-45 opacity-60"></div>
-                        <div class="h-[1px] bg-[#1a1a1a] flex-grow opacity-60"></div>
-                    </div>
+            <p class="font-cinzel font-light italic text-[22px] text-[#1a1a1a]">
+              20 Setembro 2026
+            </p>
+          </div>
+        </section>
 
-                    <p class="font-cinzel font-light italic text-[22px] text-[#1a1a1a]">
-                        20 Setembro 2026
-                    </p>
-                </div>
-            </section>
+        <section
+          class="relative h-[100dvh] w-full snap-start flex flex-col items-center justify-center p-4 bg-[#fcfbf9] shrink-0"
+        >
+          <div class="mb-2">
+            <img
+              src="./assets/icons/venue.webp"
+              alt=""
+              aria-hidden="true"
+              class="section-icon w-20 h-20 object-contain mix-blend-multiply"
+            />
+          </div>
+          <h2
+            class="font-playfair font-normal italic text-[26px] mb-4 text-[#1a1a1a]"
+          >
+            Localização
+          </h2>
 
-            <section class="relative h-[100dvh] w-full snap-start flex flex-col items-center justify-center p-4 bg-[#fcfbf9] shrink-0">
-                <div class="mb-2">
-                    <img src="./assets/icons/venue.webp" alt="" aria-hidden="true" class="section-icon w-20 h-20 object-contain mix-blend-multiply">
-                </div>
-                <h2 class="font-playfair font-normal italic text-[26px] mb-4 text-[#1a1a1a]">Localização</h2>
-                
-                <div class="w-full max-w-sm bg-white border border-[#e5e0d8] rounded-2xl overflow-hidden shadow-sm flex flex-col">
-                    <div class="w-full h-24 border-b border-[#e5e0d8] shrink-0 relative">
-                        <img src="./assets/images/InatoBistro.webp" alt="INATO Bistrô" class="absolute inset-0 w-full h-full object-cover">
-                    </div>
-            
-                    <div class="p-5 text-center flex-grow flex flex-col justify-center">
-                        <h3 class="font-playfair font-medium text-[20px] text-[#1a1a1a] mb-2 leading-tight">
-                            INATO Bistrô
-                        </h3>
-                        
-                        <div class="font-cinzel text-[12px] text-slate-600 uppercase leading-relaxed mb-4">
-                            <p>Praça do Município Nº7</p>
-                            <p>4700-435 Braga</p>
-                        </div>
-            
-                        <div class="flex flex-col gap-2 w-full">
-                            <a href="https://maps.app.goo.gl/LPtcptAvffdHWEocA" target="_blank" rel="noopener noreferrer" class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer">
-                                <div class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
-                                    <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
-                                </div>
-                                <div class="action-button__copy flex-grow text-center pr-8">
-                                    <span class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase">Usar Google Maps</span>
-                                </div>
-                            </a>
-                            
-                            <a href="https://waze.com/ul?q=INATO%20Bistr%C3%B3%20Braga%20Portugal&navigate=yes" target="_blank" rel="noopener noreferrer" class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer">
-                                <div class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
-                                    <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
-                                </div>
-                                <div class="action-button__copy flex-grow text-center pr-8">
-                                    <span class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase">Usar Waze</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="relative h-[100dvh] w-full snap-start flex flex-col items-center justify-center p-4 bg-[#fcfbf9] shrink-0">
-                <div class="mb-2">
-                    <img src="./assets/icons/event-end.webp" alt="" aria-hidden="true" class="section-icon w-20 h-20 object-contain mix-blend-multiply">
-                </div>
-                <h2 class="font-playfair font-normal italic text-[26px] mb-4 text-[#1a1a1a]">Estacionamento</h2>
-                
-                <div class="w-full max-w-sm bg-white border border-[#e5e0d8] rounded-2xl overflow-hidden shadow-sm flex flex-col">
-                    <div class="p-6 text-center flex-grow flex flex-col justify-center">
-                        <h3 class="font-playfair font-medium text-[20px] text-[#1a1a1a] mb-2 leading-tight">
-                            Campo da Vinha Car Park
-                        </h3>
-                        
-                        <div class="font-cinzel text-[12px] text-slate-600 uppercase leading-relaxed mb-6">
-                            <p>Praça Conde de Agrolongo 83</p>
-                            <p>4700-295 Braga</p>
-                        </div>
-            
-                        <div class="flex flex-col gap-2 w-full">
-                            <a href="https://maps.app.goo.gl/zhtCZRKYumLPgwur8" target="_blank" rel="noopener noreferrer" class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer">
-                                <div class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
-                                    <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
-                                </div>
-                                <div class="action-button__copy flex-grow text-center pr-8">
-                                    <span class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase">Usar Google Maps</span>
-                                </div>
-                            </a>
-                            
-                            <a href="https://waze.com/ul?q=Pra%C3%A7a%20Conde%20de%20Agrolongo%2083%20Braga%20Portugal&navigate=yes" target="_blank" rel="noopener noreferrer" class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer">
-                                <div class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
-                                    <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
-                                </div>
-                                <div class="action-button__copy flex-grow text-center pr-8">
-                                    <span class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase">Usar Waze</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="relative h-[100dvh] w-full snap-start flex flex-col items-center justify-center p-4 bg-[#fcfbf9] shrink-0">
-                <div class="mb-2">
-                    <img src="./assets/icons/timeline.webp" alt="" aria-hidden="true" class="section-icon section-icon--small w-16 h-16 object-contain mix-blend-multiply">
-                </div>
-                
-                <h2 class="font-playfair font-normal italic text-[26px] mb-1 text-[#1a1a1a]">Planeamento</h2>
-                <p class="font-cinzel text-[10px] uppercase tracking-widest text-slate-500 mb-6">O que nós planeámos para ti</p>
-                
-                <div class="relative w-full max-w-[360px] h-[60vh] min-h-[350px] flex flex-col justify-between py-2">
-                    
-                    <svg class="absolute left-1/2 -translate-x-1/2 top-0 pointer-events-none z-0" width="200" viewBox="0 0 200 608" fill="none" preserveAspectRatio="none" style="height: 100%;" aria-hidden="true">
-                        <path d="M 80 48 C 80 112, 120 112, 120 176 C 120 240, 80 240, 80 304 C 80 368, 120 368, 120 432 C 120 496, 80 496, 80 560" stroke="#3d4f28" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dashoffset="0px" stroke-dasharray="1px 1px"></path>
-                        </svg>
-            
-                    <div class="relative flex items-center flex-1 z-10">
-                        <div class="flex-1 text-right pr-4">
-                            <h3 class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight">Receção</h3>
-                            <p class="font-playfair text-[12px] text-slate-500 mt-1">16:00</p>
-                        </div>
-                        <div class="w-16 shrink-0"></div>
-                        <div class="flex-1 text-left pl-4">
-                            <img src="./assets/icons/welcome-drink.webp" alt="Receção icon" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-            
-                    <div class="relative flex items-center flex-1 z-10">
-                        <div class="flex-1 text-right pr-4 flex justify-end">
-                            <img src="./assets/icons/wedding-rings.webp" alt="Cerimónia icon" class="w-12 h-12 object-contain">
-                        </div>
-                        <div class="w-16 shrink-0"></div>
-                        <div class="flex-1 text-left pl-4">
-                            <h3 class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight">Cerimónia</h3>
-                            <p class="font-playfair text-[12px] text-slate-500 mt-1">16:15</p>
-                        </div>
-                    </div>
-            
-                    <div class="relative flex items-center flex-1 z-10">
-                        <div class="flex-1 text-right pr-4">
-                            <h3 class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight">Cocktail</h3>
-                            <p class="font-playfair text-[12px] text-slate-500 mt-1">17:00</p>
-                        </div>
-                        <div class="w-16 shrink-0"></div>
-                        <div class="flex-1 text-left pl-4">
-                            <img src="./assets/icons/cocktail.webp" alt="Cocktail icon" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-            
-                    <div class="relative flex items-center flex-1 z-10">
-                        <div class="flex-1 text-right pr-4 flex justify-end">
-                            <img src="./assets/icons/wedding-cake.webp" alt="Bolo icon" class="w-12 h-12 object-contain">
-                        </div>
-                        <div class="w-16 shrink-0"></div>
-                        <div class="flex-1 text-left pl-4">
-                            <h3 class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight">Corte do<br>Bolo</h3>
-                            <p class="font-playfair text-[12px] text-slate-500 mt-1">19:00</p>
-                        </div>
-                    </div>
-            
-                    <div class="relative flex items-center flex-1 z-10">
-                        <div class="flex-1 text-right pr-4">
-                            <h3 class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight">Fim</h3>
-                            <p class="font-playfair text-[12px] text-slate-500 mt-1">20:00</p>
-                        </div>
-                        <div class="w-16 shrink-0"></div>
-                        <div class="flex-1 text-left pl-4">
-                            <img src="./assets/icons/event-end.webp" alt="Fim icon" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
-                <div class="mb-4">
-                    <img src="./assets/icons/open-book.webp" alt="" aria-hidden="true" class="section-icon w-24 h-24 object-contain mix-blend-multiply">
-                </div>
-                
-                <h2 class="font-playfair font-normal italic text-[30px] mb-8 text-[#1a1a1a]">Como tudo começou</h2>
-                
-                <div class="font-cinzel text-[14px] text-[#1a1a1a] leading-[2] uppercase space-y-6 px-4 overflow-y-auto max-h-[50vh] no-scrollbar">
-                    <p>Conhecemo-nos por acaso.</p>
-                    <p>Ficámos por escolha.</p>
-                    <p>E, sem darmos por isso, encontrámos um no outro aquilo que todos procuramos: alguém que faz qualquer lugar parecer casa.</p>
-                </div>
-            </section>
-            
-            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
-    
-                <div class="mb-4">
-                    <img src="./assets/icons/dresscode.webp" alt="" aria-hidden="true" class="section-icon w-24 h-24 object-contain mix-blend-multiply">
-                </div>
-                
-                <h2 class="font-playfair font-normal italic text-[30px] mb-8 text-[#1a1a1a]">Dress Code</h2>
-                
-                <div class="w-full max-w-xs bg-[#fdfaf6] border border-[#e5e0d8] rounded-2xl p-6 sm:p-8 flex flex-col items-center shadow-sm">
-                    <div class="w-12 h-[1px] bg-[#d4cbb8] mb-6"></div>
-                    <p class="font-playfair font-medium text-[22px] text-[#1a1a1a] mb-8">Semi-Formal</p>
-                    
-                    <div class="grid grid-cols-2 w-full mb-10 relative">
-                        
-                        <div class="absolute left-1/2 top-4 bottom-0 w-[1px] bg-[#e5e0d8] -translate-x-1/2" aria-hidden="true"></div>
-                        
-                        <div class="flex flex-col items-center px-2">
-                            <span class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4">Mulheres</span>
-                            <span class="font-cinzel text-[13px] text-[#1a1a1a] uppercase text-center leading-[1.8]">
-                                Vestido de<br>Cocktail
-                            </span>
-                        </div>
-                
-                        <div class="flex flex-col items-center px-2">
-                            <span class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4">Homens</span>
-                            <span class="font-cinzel text-[13px] text-[#1a1a1a] uppercase text-center leading-[1.6]">
-                                Blazer com Camisa
-                                <span class="block text-[14px] text-[#d4cbb8] my-1 font-playfair italic lowercase">&</span>
-                                Calças Chino
-                            </span>
-                        </div>
-                    </div>
-            
-                    <p class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4">Cores Sugeridas:</p>
-                    <div class="flex flex-wrap gap-4 mb-6 justify-center">
-                        <div class="w-8 h-8 rounded-full bg-[#4a7c59] shadow-inner border border-black/5" title="Verde Sálvia"></div>
-                        <div class="w-8 h-8 rounded-full bg-[#e6d5a7] shadow-inner border border-black/5" title="Beige"></div>
-                        <div class="w-8 h-8 rounded-full bg-[#e89db1] shadow-inner border border-black/5" title="Rosa Seco"></div>
-                        <div class="w-8 h-8 rounded-full bg-[#DCBBED] shadow-inner border border-black/5" title="Violeta"></div>
-                    </div>
-                    <div class="w-12 h-[1px] bg-[#d4cbb8]"></div>
-                </div>
-            </section>
-            
-            <section class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0">
-                <div class="mb-4">
-                    <img src="./assets/icons/confirmation.webp" alt="" aria-hidden="true" class="section-icon w-24 h-24 object-contain mix-blend-multiply">
-                </div>
-                
-                <h2 class="font-playfair font-normal italic text-[30px] mb-6 text-[#1a1a1a]">Confirmação</h2>
-                
-                <p class="font-cinzel text-[14px] text-[#1a1a1a] mb-10 px-4 leading-[2] tracking-wide uppercase">
-                    Por favor, confirma a tua presença<br>até ao dia <span class="font-playfair font-medium">1 de Agosto de 2026</span>.
-                </p>
-                
-                <a href="[LINK_DO_GOOGLE_FORMS]" target="_blank" rel="noopener noreferrer" class="action-button relative w-full max-w-xs flex items-center py-3 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer">
-                    
-                    <div class="action-button__icon w-10 h-10 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50">
-                        <svg class="w-4 h-4 text-[#5c5c5c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    </div>
-                    
-                    <div class="action-button__copy flex-grow text-center pr-10">
-                        <span class="block font-cinzel font-medium text-[13px] text-[#1a1a1a] uppercase">Confirmar Presença</span>
-                        <span class="block font-cinzel font-normal text-[10px] text-[#5c5c5c] tracking-widest uppercase mt-0.5">Abrir Google Forms</span>
-                    </div>
+          <div
+            class="w-full max-w-sm bg-white border border-[#e5e0d8] rounded-2xl overflow-hidden shadow-sm flex flex-col"
+          >
+            <div
+              class="w-full h-24 border-b border-[#e5e0d8] shrink-0 relative"
+            >
+              <img
+                src="./assets/images/InatoBistro.webp"
+                alt="INATO Bistrô"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="p-5 text-center flex-grow flex flex-col justify-center">
+              <h3
+                class="font-playfair font-medium text-[20px] text-[#1a1a1a] mb-2 leading-tight"
+              >
+                INATO Bistrô
+              </h3>
+
+              <div
+                class="font-cinzel text-[12px] text-slate-600 uppercase leading-relaxed mb-4"
+              >
+                <p>Praça do Município Nº7</p>
+                <p>4700-435 Braga</p>
+              </div>
+
+              <div class="flex flex-col gap-2 w-full">
+                <a
+                  href="https://maps.app.goo.gl/LPtcptAvffdHWEocA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer"
+                >
+                  <div
+                    class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50"
+                  >
+                    <svg
+                      class="w-4 h-4 text-[#5c5c5c]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="action-button__copy flex-grow text-center pr-8">
+                    <span
+                      class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase"
+                      >Usar Google Maps</span
+                    >
+                  </div>
                 </a>
-            </section>
-        </main>
+
+                <a
+                  href="https://waze.com/ul?q=INATO%20Bistr%C3%B3%20Braga%20Portugal&navigate=yes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer"
+                >
+                  <div
+                    class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50"
+                  >
+                    <svg
+                      class="w-4 h-4 text-[#5c5c5c]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="action-button__copy flex-grow text-center pr-8">
+                    <span
+                      class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase"
+                      >Usar Waze</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="relative h-[100dvh] w-full snap-start flex flex-col items-center justify-center p-4 bg-[#fcfbf9] shrink-0"
+        >
+          <div class="mb-2">
+            <img
+              src="./assets/icons/event-end.webp"
+              alt=""
+              aria-hidden="true"
+              class="section-icon w-20 h-20 object-contain mix-blend-multiply"
+            />
+          </div>
+          <h2
+            class="font-playfair font-normal italic text-[26px] mb-4 text-[#1a1a1a]"
+          >
+            Estacionamento
+          </h2>
+
+          <div
+            class="w-full max-w-sm bg-white border border-[#e5e0d8] rounded-2xl overflow-hidden shadow-sm flex flex-col"
+          >
+            <div class="p-6 text-center flex-grow flex flex-col justify-center">
+              <h3
+                class="font-playfair font-medium text-[20px] text-[#1a1a1a] mb-2 leading-tight"
+              >
+                Campo da Vinha Car Park
+              </h3>
+
+              <div
+                class="font-cinzel text-[12px] text-slate-600 uppercase leading-relaxed mb-6"
+              >
+                <p>Praça Conde de Agrolongo 83</p>
+                <p>4700-295 Braga</p>
+              </div>
+
+              <div class="flex flex-col gap-2 w-full">
+                <a
+                  href="https://maps.app.goo.gl/zhtCZRKYumLPgwur8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer"
+                >
+                  <div
+                    class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50"
+                  >
+                    <svg
+                      class="w-4 h-4 text-[#5c5c5c]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="action-button__copy flex-grow text-center pr-8">
+                    <span
+                      class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase"
+                      >Usar Google Maps</span
+                    >
+                  </div>
+                </a>
+
+                <a
+                  href="https://waze.com/ul?q=Pra%C3%A7a%20Conde%20de%20Agrolongo%2083%20Braga%20Portugal&navigate=yes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="action-button relative w-full flex items-center py-2 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer"
+                >
+                  <div
+                    class="action-button__icon w-8 h-8 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50"
+                  >
+                    <svg
+                      class="w-4 h-4 text-[#5c5c5c]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="action-button__copy flex-grow text-center pr-8">
+                    <span
+                      class="block font-cinzel font-medium text-[12px] text-[#1a1a1a] uppercase"
+                      >Usar Waze</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="relative h-[100dvh] w-full snap-start flex flex-col items-center justify-center p-4 bg-[#fcfbf9] shrink-0"
+        >
+          <div class="mb-2">
+            <img
+              src="./assets/icons/timeline.webp"
+              alt=""
+              aria-hidden="true"
+              class="section-icon section-icon--small w-16 h-16 object-contain mix-blend-multiply"
+            />
+          </div>
+
+          <h2
+            class="font-playfair font-normal italic text-[26px] mb-1 text-[#1a1a1a]"
+          >
+            Planeamento
+          </h2>
+          <p
+            class="font-cinzel text-[10px] uppercase tracking-widest text-slate-500 mb-6"
+          >
+            O que nós planeámos para ti
+          </p>
+
+          <div
+            class="relative w-full max-w-[360px] h-[60vh] min-h-[350px] flex flex-col justify-between py-2"
+          >
+            <svg
+              class="absolute left-1/2 -translate-x-1/2 top-0 pointer-events-none z-0"
+              width="200"
+              viewBox="0 0 200 608"
+              fill="none"
+              preserveAspectRatio="none"
+              style="height: 100%"
+              aria-hidden="true"
+            >
+              <path
+                d="M 80 48 C 80 112, 120 112, 120 176 C 120 240, 80 240, 80 304 C 80 368, 120 368, 120 432 C 120 496, 80 496, 80 560"
+                stroke="#3d4f28"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                pathLength="1"
+                stroke-dashoffset="0px"
+                stroke-dasharray="1px 1px"
+              ></path>
+            </svg>
+
+            <div class="relative flex items-center flex-1 z-10">
+              <div class="flex-1 text-right pr-4">
+                <h3
+                  class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight"
+                >
+                  Receção
+                </h3>
+                <p class="font-playfair text-[12px] text-slate-500 mt-1">
+                  16:00
+                </p>
+              </div>
+              <div class="w-16 shrink-0"></div>
+              <div class="flex-1 text-left pl-4">
+                <img
+                  src="./assets/icons/welcome-drink.webp"
+                  alt="Receção icon"
+                  class="w-12 h-12 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex items-center flex-1 z-10">
+              <div class="flex-1 text-right pr-4 flex justify-end">
+                <img
+                  src="./assets/icons/wedding-rings.webp"
+                  alt="Cerimónia icon"
+                  class="w-12 h-12 object-contain"
+                />
+              </div>
+              <div class="w-16 shrink-0"></div>
+              <div class="flex-1 text-left pl-4">
+                <h3
+                  class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight"
+                >
+                  Cerimónia
+                </h3>
+                <p class="font-playfair text-[12px] text-slate-500 mt-1">
+                  16:15
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center flex-1 z-10">
+              <div class="flex-1 text-right pr-4">
+                <h3
+                  class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight"
+                >
+                  Cocktail
+                </h3>
+                <p class="font-playfair text-[12px] text-slate-500 mt-1">
+                  17:00
+                </p>
+              </div>
+              <div class="w-16 shrink-0"></div>
+              <div class="flex-1 text-left pl-4">
+                <img
+                  src="./assets/icons/cocktail.webp"
+                  alt="Cocktail icon"
+                  class="w-12 h-12 object-contain"
+                />
+              </div>
+            </div>
+
+            <div class="relative flex items-center flex-1 z-10">
+              <div class="flex-1 text-right pr-4 flex justify-end">
+                <img
+                  src="./assets/icons/wedding-cake.webp"
+                  alt="Bolo icon"
+                  class="w-12 h-12 object-contain"
+                />
+              </div>
+              <div class="w-16 shrink-0"></div>
+              <div class="flex-1 text-left pl-4">
+                <h3
+                  class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight"
+                >
+                  Corte do<br />Bolo
+                </h3>
+                <p class="font-playfair text-[12px] text-slate-500 mt-1">
+                  19:00
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex items-center flex-1 z-10">
+              <div class="flex-1 text-right pr-4">
+                <h3
+                  class="font-cinzel font-medium text-[14px] text-[#1a1a1a] uppercase leading-tight"
+                >
+                  Fim
+                </h3>
+                <p class="font-playfair text-[12px] text-slate-500 mt-1">
+                  20:00
+                </p>
+              </div>
+              <div class="w-16 shrink-0"></div>
+              <div class="flex-1 text-left pl-4">
+                <img
+                  src="./assets/icons/event-end.webp"
+                  alt="Fim icon"
+                  class="w-12 h-12 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0"
+        >
+          <div class="mb-4">
+            <img
+              src="./assets/icons/open-book.webp"
+              alt=""
+              aria-hidden="true"
+              class="section-icon w-24 h-24 object-contain mix-blend-multiply"
+            />
+          </div>
+
+          <h2
+            class="font-playfair font-normal italic text-[30px] mb-8 text-[#1a1a1a]"
+          >
+            Como tudo começou
+          </h2>
+
+          <div
+            class="font-cinzel text-[14px] text-[#1a1a1a] leading-[2] uppercase space-y-6 px-4 overflow-y-auto max-h-[50vh] no-scrollbar"
+          >
+            <p>Conhecemo-nos por acaso.</p>
+            <p>Ficámos por escolha.</p>
+            <p>
+              E, sem darmos por isso, encontrámos um no outro aquilo que todos
+              procuramos: alguém que faz qualquer lugar parecer casa.
+            </p>
+          </div>
+        </section>
+
+        <section
+          class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0"
+        >
+          <div class="mb-4">
+            <img
+              src="./assets/icons/dresscode.webp"
+              alt=""
+              aria-hidden="true"
+              class="section-icon w-24 h-24 object-contain mix-blend-multiply"
+            />
+          </div>
+
+          <h2
+            class="font-playfair font-normal italic text-[30px] mb-8 text-[#1a1a1a]"
+          >
+            Dress Code
+          </h2>
+
+          <div
+            class="w-full max-w-xs bg-[#fdfaf6] border border-[#e5e0d8] rounded-2xl p-6 sm:p-8 flex flex-col items-center shadow-sm"
+          >
+            <div class="w-12 h-[1px] bg-[#d4cbb8] mb-6"></div>
+            <p
+              class="font-playfair font-medium text-[22px] text-[#1a1a1a] mb-8"
+            >
+              Semi-Formal
+            </p>
+
+            <div class="grid grid-cols-2 w-full mb-10 relative">
+              <div
+                class="absolute left-1/2 top-4 bottom-0 w-[1px] bg-[#e5e0d8] -translate-x-1/2"
+                aria-hidden="true"
+              ></div>
+
+              <div class="flex flex-col items-center px-2">
+                <span
+                  class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4"
+                  >Mulheres</span
+                >
+                <span
+                  class="font-cinzel text-[13px] text-[#1a1a1a] uppercase text-center leading-[1.8]"
+                >
+                  Vestido de<br />Cocktail
+                </span>
+              </div>
+
+              <div class="flex flex-col items-center px-2">
+                <span
+                  class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4"
+                  >Homens</span
+                >
+                <span
+                  class="font-cinzel text-[13px] text-[#1a1a1a] uppercase text-center leading-[1.6]"
+                >
+                  Blazer com Camisa
+                  <span
+                    class="block text-[14px] text-[#d4cbb8] my-1 font-playfair italic lowercase"
+                    >&</span
+                  >
+                  Calças Chino
+                </span>
+              </div>
+            </div>
+
+            <p
+              class="font-cinzel text-[10px] text-slate-500 tracking-widest uppercase mb-4"
+            >
+              Cores Sugeridas:
+            </p>
+            <div class="flex flex-wrap gap-4 mb-6 justify-center">
+              <div
+                class="w-8 h-8 rounded-full bg-[#4a7c59] shadow-inner border border-black/5"
+                title="Verde Sálvia"
+              ></div>
+              <div
+                class="w-8 h-8 rounded-full bg-[#e6d5a7] shadow-inner border border-black/5"
+                title="Beige"
+              ></div>
+              <div
+                class="w-8 h-8 rounded-full bg-[#e89db1] shadow-inner border border-black/5"
+                title="Rosa Seco"
+              ></div>
+              <div
+                class="w-8 h-8 rounded-full bg-[#DCBBED] shadow-inner border border-black/5"
+                title="Violeta"
+              ></div>
+            </div>
+            <div class="w-12 h-[1px] bg-[#d4cbb8]"></div>
+          </div>
+        </section>
+
+        <section
+          class="relative h-screen w-full snap-start flex flex-col items-center justify-center text-center p-8 bg-[#fcfbf9] shrink-0"
+        >
+          <div class="mb-4">
+            <img
+              src="./assets/icons/confirmation.webp"
+              alt=""
+              aria-hidden="true"
+              class="section-icon w-24 h-24 object-contain mix-blend-multiply"
+            />
+          </div>
+
+          <h2
+            class="font-playfair font-normal italic text-[30px] mb-6 text-[#1a1a1a]"
+          >
+            Confirmação
+          </h2>
+
+          <p
+            class="font-cinzel text-[14px] text-[#1a1a1a] mb-10 px-4 leading-[2] tracking-wide uppercase"
+          >
+            Por favor, confirma a tua presença<br />até ao dia
+            <span class="font-playfair font-medium">1 de Agosto de 2026</span>.
+          </p>
+
+          <a
+            href="[LINK_DO_GOOGLE_FORMS]"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="action-button relative w-full max-w-xs flex items-center py-3 pr-4 pl-2 bg-[#fdfaf6] border border-[#e5e0d8] rounded-full hover:border-[#d4cbb8] hover:shadow-sm transition-all cursor-pointer"
+          >
+            <div
+              class="action-button__icon w-10 h-10 rounded-full bg-[#f4ebd9]/50 flex items-center justify-center shrink-0 border border-[#e5e0d8]/50"
+            >
+              <svg
+                class="w-4 h-4 text-[#5c5c5c]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+
+            <div class="action-button__copy flex-grow text-center pr-10">
+              <span
+                class="block font-cinzel font-medium text-[13px] text-[#1a1a1a] uppercase"
+                >Confirmar Presença</span
+              >
+              <span
+                class="block font-cinzel font-normal text-[10px] text-[#5c5c5c] tracking-widest uppercase mt-0.5"
+                >Abrir Google Forms</span
+              >
+            </div>
+          </a>
+        </section>
+      </main>
     </div>
 
+    <audio id="bg-audio" loop preload="none">
+      <source src="./assets/audio/intro.mp3" type="audio/mpeg" />
+    </audio>
+
+    <button
+      id="audio-control"
+      class="fixed bottom-6 right-6 z-[100] w-12 h-12 bg-[#2a2a2a]/90 backdrop-blur-sm rounded-full flex items-center justify-center border border-[#e5e0d8]/10 shadow-xl opacity-0 pointer-events-none transition-opacity duration-1000 hidden"
+    >
+      <svg
+        id="icon-unmuted"
+        class="w-[22px] h-[22px] text-[#f4ebd9]"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5 4.06c0-1.336-1.546-2.069-2.584-1.226L6.5 6.429H3.75A2.25 2.25 0 001.5 8.679v6.642a2.25 2.25 0 002.25 2.25h2.75l4.416 3.595c1.038.843 2.584.11 2.584-1.226V4.06zM17.433 6.953a.75.75 0 00-1.06 1.06 5.25 5.25 0 010 7.424.75.75 0 001.06 1.06 6.75 6.75 0 000-9.544z"
+        />
+        <path
+          d="M20.617 4.295a.75.75 0 00-1.06 1.06 9 9 0 010 12.73.75.75 0 101.06 1.06 10.5 10.5 0 000-14.85z"
+        />
+      </svg>
+
+      <svg
+        id="icon-muted"
+        class="w-[22px] h-[22px] text-[#f4ebd9] hidden"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5 4.06c0-1.336-1.546-2.069-2.584-1.226L6.5 6.429H3.75A2.25 2.25 0 001.5 8.679v6.642a2.25 2.25 0 002.25 2.25h2.75l4.416 3.595c1.038.843 2.584.11 2.584-1.226V4.06zM22.03 4.97a.75.75 0 00-1.06 0l-15.5 15.5a.75.75 0 001.06 1.06l15.5-15.5a.75.75 0 000-1.06z"
+        />
+      </svg>
+    </button>
+
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
